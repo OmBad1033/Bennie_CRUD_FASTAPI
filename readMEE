@@ -1,3 +1,5 @@
+pip install 'uvicorn[standard]'
+pip install fastapi
 pip install "python-jose[cryptography]"
 pip install "passlib[bcrypt]"
 pip install python-multipart

@@ -6,10 +6,11 @@ from core.config import Settings
 from core.models.model import __beanie_models__
 
 from api.endpoints import task
-
+from core.services import auth
 
 app = FastAPI()
 app.include_router(task.product)
+app.include_router(auth.router)
 
 settings = Settings()
 
